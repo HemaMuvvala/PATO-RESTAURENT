@@ -1,0 +1,144 @@
+.navi {
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+.navigation {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+}
+
+.img1 {
+    border-radius: 10px;
+    height: 400px;
+}
+
+.textcol {
+    padding-top: 130px;
+}
+
+.scroll_image {
+    height: 300px;
+    width: 100%;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll_video {
+    height: 500px;
+    width: 100%;
+    background-image: url("images/bg-cover-video-02.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.italic {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.img_grid img:hover {
+    transform: scale(1.05);
+}
+.img_grid{
+    overflow: hidden;
+    height: 400px;
+    border: none;
+}
+
+.img_grid img{
+    max-width: 100%;
+    transition: all 0.3s;
+    transform: scale(1);
+    border-radius: 20px;
+}
+
+.red:hover{
+    color: red;
+}
+
+.menu{
+    border: none;
+}
+
+.menu_btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu_btn button:hover{
+    background-color: red;
+}
+
+.menu {
+	display: block;
+	overflow: hidden;
+}
+.menu img{
+	width: 100%;
+    transition: all 0.6s;
+}
+.menu:hover img {
+	transform: scale(1.1);
+}
+
+.heading{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    word-spacing: 8px;
+}
+
+.heading_two{
+    letter-spacing: 2px;
+}
+
+.menu_container{
+    background-color: antiquewhite;
+}
+
+.book {
+	display: block;
+	overflow: hidden;
+    border-radius: 15px;
+}
+.book img{
+	width: 100%;
+    transition: all 0.6s;
+    border-radius: 20px;
+}
+.book:hover img {
+	transform: scale(1.1);
+}
+
+.off_hover a{
+    text-decoration: none;
+    color: black;
+}
+
+.off_hover a:hover{
+    color: #d61c22;
+}
+
+.footer{
+    background-color: #333;
+}
+

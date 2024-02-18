@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>POTO</title>
+</head>
+
+<body>
+  <hr style="color: red; width: 5px;">
+  <!-- ------------------nav starts -->
+  <nav class="navbar navbar-expand-xxl  navbar-dark navigation fixed-top">
+    <div class="container">
+      <a class="navbar-brand pe-5" href="#">
+        <img src="images/logo.png" alt="Avatar Logo" style="width:80px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navi" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">RESERVATION</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">GALLARY</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#"><i class="bi bi-eyeglasses"></i></a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo">
+              <i class="bi bi-distribute-vertical d-flex" style="font-size: 30px;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ---------------nav ends -->
+  <!-- offcanvas starts -->
+  <div class="offcanvas offcanvas-end" id="demo">
+    <div class="offcanvas-header">
+      <P></P>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body text-center">
+      <div class="off_hover">
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="#">MENU</a></p>
+        <p><a href="#">GALLARY</a></p>
+        <p><a href="#">ABOUT</a></p>
+        <p><a href="#">BLOG</a></p>
+        <p><a href="#">CONTACT</a></p>
+        <button class="btn btn-dark" type="button">RESERVATION</button>
+        <div class="container mt-3">
+          <h5 class="heading_two">GALLERY</h5>
+          <div class="row mb-3">
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-01.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-02.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-03.jpg" alt="Not available">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-05.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-06.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-07.jpg" alt="Not available">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-09.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-10.jpg" alt="Not available">
+            </div>
+            <div class="col-sm-4"><img class="img-fluid" src="images/photo-gallery-thumb-11.jpg" alt="Not available">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas ends -->
+  <!-- ====== carousel starts======== -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide.jpg" alt="New York" class="d-block" style="width:100%;height: 600px;">
+        <div class="carousel-caption">
+          <h3 class="heading_two">Welcome</h3>
+          <h2 class="heading">PATO PLACE</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide2.png" alt="Los Angeles" class="d-block" style="width:100%;height: 600px;">
+        <div class="carousel-caption">
+          <h3 class="heading_two">Welcome</h3>
+          <h2 class="heading">POTO PLACE</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide1.png" alt="Chicago" class="d-block" style="width:100%;height: 600px;">
+        <div class="carousel-caption">
+          <h3 class="heading_two">Welcome</h3>
+          <h2 class="heading">POTO PLACE</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- ====== carousel starts======== -->
+
+  <!-- welcome=============== -->
+  <div class="container">
+    <div class="row" style="height: 100px;"></div>
+    <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-5 text-center textcol">
+        <h3 class="italic">Italian Restaurant</h3>
+        <h2 class="heading">WELCOME</h2>
+        <p class="text-secondary">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc
+          sed imperdiet lacinia,
+          nisl ante egestas mi, ac facilisis ligula sem id neque.
+        </p>
+      </div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-lg-4">
+        <img src="images/our-story-01.jpg" class="img-fluid img1">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <div class="row" style="height: 100px;"></div>
+    <div class="row">
+    </div>
+  </div>
+
+  <!-- welcome ends=============== -->
+  <!-- ====== scrolll images start========= -->
+  <div class="container-fluid scroll_image">
+    <div class="text">
+      <div>
+        <h3 class="italic">Discover</h3>
+      </div>
+      <div>
+        <h1 style="font-weight: bold;color: white;" class="heading">PATO PLACE</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== scrolll images ends========= -->
+  <!-- --------cards start------- -->
+  <div class="container">
+    <div class="row" style="height: 100px;"></div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width: 350px;">
+          <img class="img-fluid" src="images/intro-01.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="red">ROMANTIC RESTAURANT</h4>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary"> LEARN MORE </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width: 350px;">
+          <img class="img-fluid" src="images/intro-02.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="red">DELICIOUS FOOD</h4>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary"> LEARN MORE </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width: 350px;">
+          <img class="img-fluid" src="images/intro-03.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="red">RED WINES YOU LOVE</h4>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary"> LEARN MORE </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 100px;"></div>
+  </div>
+  <!-- --------cards start------- -->
+  <!-- -------our menu starts -->
+  <div class="container-fluid menu_container">
+    <div class="row" style="height: 100px;"></div>
+    <div class="row text-center">
+      <h4 class="italic">Discover</h4>
+      <h2 class="heading">OUR MENU</h2>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-4">
+        <div class="card menu">
+          <img class="images/card-img-top img-fluid rounded" src="images/menu1.jpg" alt="Card image">
+          <div class="card-img-overlay menu_btn">
+            <button class="btn btn-light btn-lg ">LUNCH</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card menu">
+          <img class="images/card-img-top img-fluid rounded" src="images/menu2.jpg" alt="Card image">
+          <div class="card-img-overlay menu_btn">
+            <button class="btn btn-light btn-lg">DINNER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card menu">
+              <img class="card-img-top img-fluid rounded" src="images/menu3.jpg" alt="Card image">
+              <div class="card-img-overlay menu_btn">
+                <button class="btn btn-light btn-lg">DRINK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding-top:40px;">
+          <div class="col-sm-12">
+            <div class="card menu">
+              <img class="card-img-top img-fluid rounded" src="images/menu4.jpg" alt="Card image">
+              <div class="card-img-overlay menu_btn">
+                <button class="btn btn-light btn-lg">STARTERS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card menu">
+          <img class="card-img-top img-fluid rounded" src="images/menu5.jpg" alt="Card image">
+          <div class="card-img-overlay menu_btn">
+            <button class="btn btn-light btn-lg">HAPPY HOUR</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card menu">
+          <img class="card-img-top img-fluid rounded" src="images/menu6.jpg" alt="Card image">
+          <div class="card-img-overlay menu_btn">
+            <button class="btn btn-light btn-lg">DESSERT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 100px;"></div>
+  </div>
+  <!-- -----menu ends -->
+  <!-- reservation form starts -->
+  <div class="container-fluid">
+    <div class="row" style="height:100px;"></div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <div class="row text-center">
+          <h3 class="italic">Reservation</h3>
+          <h2 class="heading">BOOK TABLE</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <form>
+              <div class="mb-3 mt-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="date">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" name="time">
+              </div>
+              <label for="person" class="form-label">people</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">people</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">person 1</a></li>
+                  <li><a class="dropdown-item" href="#">2 people</a></li>
+                  <li><a class="dropdown-item" href="#">3 people</a></li>
+                  <li><a class="dropdown-item" href="#">4 people</a></li>
+                  <li><a class="dropdown-item" href="#">5 people</a></li>
+                  <li><a class="dropdown-item" href="#">6 people</a></li>
+                  <li><a class="dropdown-item" href="#">7 people</a></li>
+                  <li><a class="dropdown-item" href="#">8 people</a></li>
+                  <li><a class="dropdown-item" href="#">9 people</a></li>
+                  <li><a class="dropdown-item" href="#">10 people</a></li>
+                  <li><a class="dropdown-item" href="#">11 people</a></li>
+                  <li><a class="dropdown-item" href="#">12 people</a></li>
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button" id="person">
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <form>
+              <div class="mb-3 mt-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone number">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-4"><button class="btn btn-dark">BOOK TABLE</button></div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 book">
+        <img class="img-fluid" src="images/booking-01.jpg" alt="Not available">
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row" style="height:100px;"></div>
+  </div>
+  <!-- reservation form ends -->
+  <div class="container-fluid scroll_video">
+    <div class="text">
+      <div>
+        <h3 class="italic">Discover</h3>
+      </div>
+      <div>
+        <h1 style="font-weight: bold;color: white;" class="heading">OUR VIDEO</h1>
+      </div>
+      <div class="video_icon">
+        <button class="btn rounded-circle" data-bs-toggle="modal" data-bs-target="#myModal"><i
+            class="bi bi-play-circle-fill" style="font-size: 60px;color:white;"></i></button>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5k1hSu2gdKE?si=PC63o7x6miMyIBeH"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog starts -->
+  <div class="container">
+    <div class="row" style="height: 100px;"></div>
+    <div class="row text-center">
+      <h3 class="italic">Lastest News</h3>
+      <h2 class="heading">THE BLOG</h2>
+    </div>
+    <div class="row mt-5">
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width:350px">
+          <img class="images/card-img-top" src="blog-01.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h5 class="heading_two">BEST PLACES FOR WINE</h5>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary"> CONTINUE READING </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width:350px">
+          <img class="images/card-img-top" src="blog-02.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h5 class="heading_two">EGGS AND CHEESE</h5>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary"> CONTINUE READING </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        <div class="card img_grid" style="width:350px">
+          <img class="images/card-img-top" src="blog-03.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h5 class="heading_two">STYLE THE WEDDING PARTY</h5>
+            <p class="text-secondary">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <p class="text-secondary">CONTINUE READING </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 100px;"></div>
+  </div>
+  <!-- blog ends -->
+
+  <div class="container-fluid" style="background-color: lightgrey;">
+    <div class="row" style="height: 100px;"></div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-2">
+        <h5 class="heading_two">SPECIALS SIGN UP</h5>
+      </div>
+      <div class="col-sm-2">
+        <form>
+          <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+        </form>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-dark">SIGN UP</button>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row" style="height: 100px;"></div>
+  </div>
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <h5 class="heading_two my-5 text-white">CONTACT US</h5>
+        <div class="text-secondary">
+          <p><i class="bi bi-geo-alt-fill"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+          <p><i class="bi bi-telephone-fill"></i> (+1) 96 716 6879</p>
+          <p><i class="bi bi-envelope-fill"></i> contact@site.com</p>
+        </div>
+        <h5 class="heading_two my-5 text-white">OPENING TIMES</h5>
+        <div class="text-secondary">
+          <p>09:30 AM - 11:00 PM</p>
+          <p>Every Day</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h5 class="heading_two my-5 text-white">LATEST TWITTER</h5>
+        <i class="bi bi-twitter text-white"></i>
+        <a href="index.html" class="link-danger">@colorlib</a>
+        <div class="text-secondary">
+          <p>Activello is a good option. It has a slider built into that
+            displays the featured image in the slider</p>
+          <a href="index.html" class="link-danger">https://buff.ly/2zaSfAQ</a>
+        </div>
+
+
+        <div class="text-secondary my-5">
+          <i class="bi bi-twitter text-white"></i>
+          <a href="index.html" class="link-danger">@colorlib</a>
+          <p>Activello is a good option. It has a slider built into that displays <a href="index.html"
+              class="link-danger">https://buff.ly/2zaSfAQ</a></p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="heading_two my-5 text-white">GALLERY</h5>
+        <div class="row mb-3">
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-01.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-02.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-03.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-04.jpg" alt="Not available">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-05.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-06.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-07.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-08.jpg" alt="Not available">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-09.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-10.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-11.jpg" alt="Not available">
+          </div>
+          <div class="col-sm-3 col-3"><img class="img-fluid" src="images/photo-gallery-thumb-12.jpg" alt="Not available">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  <footer class="text-secondary d-flex justify-content-between bg-dark" >
+    <div class="py-4 ps-2">
+      <i class="bi bi-eyeglasses"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+    </div>
+    <div class="py-4 pe-2">
+      <p>@ 2017 Colorlib. <span class="text-white">Get The Theme</span></p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
